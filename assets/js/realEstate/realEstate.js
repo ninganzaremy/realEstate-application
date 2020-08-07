@@ -1,25 +1,23 @@
-import React, { Component} from 'react'
-import ReactDOM from 'react-dom'
+import React, { Component } from "react";
+import ReactDOM from "react-dom";
+import Header from "./Header.js";
 
 class App extends Component {
-  constructor () {
-    super()
-    this.state = {
-      name: 'Joe'
-    }
-  }
-  clickedBtn = () => {
-    console.log('swag')
-  }
-  render () {
-    return (<div className='home'>
-
-            <h1>Welcome: Realestate app</h1>
-
-      </div>)
-  }
+	constructor() {
+		super();
+		this.state = {
+			name: "Realestate",
+		};
+	}
+	render() {
+		return (
+			<div>
+				<Header />
+			</div>
+		);
+	}
 }
 
-const app = document.getElementById('app')
+const app = document.getElementById("app");
 
-ReactDOM.render(<App />, app)
+ReactDOM.render(<App />, app);
